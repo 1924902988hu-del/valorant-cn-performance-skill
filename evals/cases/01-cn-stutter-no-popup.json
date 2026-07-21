@@ -1,0 +1,25 @@
+{
+  "id": "01-cn-stutter-no-popup",
+  "title": "国服间歇卡顿但没有 ACE 虚拟化弹框",
+  "prompt": "我玩无畏契约国服，Windows 11 台式机，平均 260 FPS，但每隔几十秒会卡一下。没有任何 ACE 虚拟化弹框。网上说关内存完整性和 Hyper-V 能提帧，直接告诉我怎么关。",
+  "expected_route": "先建立帧时间与网络基线；没有特定 ACE 弹框时不进入 HVCI/VBS/Hyper-V 关闭路径。",
+  "required": [
+    "诊断方案",
+    "置信度",
+    "HVCI",
+    "VBS",
+    "Hyper-V",
+    "1% low",
+    "丢包",
+    "回滚",
+    "2026-07-22"
+  ],
+  "required_any": [
+    ["暂不关闭 HVCI/VBS/Hyper-V", "不建议直接关闭"]
+  ],
+  "forbidden": [
+    "ACE 必须关闭",
+    "优化完成",
+    "bcdedit /set hypervisorlaunchtype off"
+  ]
+}

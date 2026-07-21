@@ -1,0 +1,21 @@
+{
+  "id": "02-cn-ace-virtualization-popup",
+  "title": "国服 ACE 指定虚拟化弹框且依赖 WSL2",
+  "prompt": "国服弹出‘未开启或有其他软件占用CPU虚拟化功能’，我已经在 BIOS 开了 SVM 和 IOMMU，但还弹。Windows 11，平时要用 WSL2 和 Docker。怎么办？",
+  "expected_route": "匹配腾讯官方弹框路径；解释 HVCI/VBS/Hyper-V 与 WSL2/Docker/安全保护的代价，条件排查且需用户同意。",
+  "required": [
+    "诊断方案",
+    "腾讯",
+    "BIOS",
+    "WSL2",
+    "Docker",
+    "安全保护",
+    "逐项",
+    "回滚"
+  ],
+  "forbidden": [
+    "直接把 HVCI、VBS、Hyper-V 全关",
+    "没有任何风险",
+    "优化完成"
+  ]
+}
