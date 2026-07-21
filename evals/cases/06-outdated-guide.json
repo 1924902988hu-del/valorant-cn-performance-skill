@@ -1,0 +1,22 @@
+{
+  "id": "06-outdated-guide",
+  "title": "识别过时攻略与错误 AMD 建议",
+  "prompt": "教程让我打开 Raw Input Buffer，还说 VALORANT 没有 AMD 原生低延迟功能，只能在驱动里开 Anti-Lag。这个 2024 教程还能照做吗？",
+  "expected_route": "指出 Raw Input Buffer 已在 11.06 移除并常开，12.09 已加入 AMD Anti-Lag 2；旧教程不能直接照搬。",
+  "required": [
+    "11.06",
+    "Raw Input Buffer",
+    "移除",
+    "常开",
+    "12.09",
+    "AMD Anti-Lag 2"
+  ],
+  "required_any": [
+    ["不能直接照做", "不能原样照做"]
+  ],
+  "forbidden": [
+    "去设置里打开 Raw Input Buffer",
+    "没有 AMD 原生低延迟",
+    "优化完成"
+  ]
+}

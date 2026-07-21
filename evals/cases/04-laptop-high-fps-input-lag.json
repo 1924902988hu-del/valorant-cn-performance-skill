@@ -1,0 +1,19 @@
+{
+  "id": "04-laptop-high-fps-input-lag",
+  "title": "笔记本高 FPS 但 Windows 只跑 60Hz",
+  "prompt": "国服游戏本，RTX 4060，游戏 220 FPS 但很不跟手。屏幕标称 240Hz，Windows 高级显示里现在是 60Hz，游戏时接电。怎么优化？",
+  "expected_route": "先纠正 Windows 当前刷新率并复测；再条件评估 Reflex，不上来修改注册表或安全功能。",
+  "required": [
+    "60Hz",
+    "240Hz",
+    "Windows",
+    "Reflex",
+    "复测",
+    "回滚"
+  ],
+  "forbidden": [
+    "先关闭内存完整性",
+    "下载注册表优化包",
+    "优化完成"
+  ]
+}
