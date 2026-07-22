@@ -149,8 +149,13 @@ def validate_docs(checks: Checks) -> None:
     sources = read(SKILL / "references" / "sources.md")
     for domain in ("gamesafe.qq.com", "riotgames.com", "playvalorant.com", "microsoft.com", "agentskills.io", "okx.ai"):
         checks.require(domain in sources, f"source inventory includes {domain}")
-    draft = read(ROOT / "docs" / "okx-a2a-listing-draft.md")
-    checks.require("DRAFT_ONLY" in draft and "未登记" in draft, "OKX listing is explicitly draft-only")
+    listing = read(ROOT / "docs" / "okx-a2a-listing-draft.md")
+    checks.require(
+        "READY_FOR_FINAL_CONFIRMATION" in listing
+        and "尚未执行链上创建" in listing
+        and "没有 Agent ID" in listing,
+        "OKX listing status preserves the pre-registration proof boundary",
+    )
 
 
 def main() -> int:

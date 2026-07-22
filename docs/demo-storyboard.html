@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FrameGuard CN · OKX.AI Genesis 80 秒演示</title>
+  <style>
+    :root { color-scheme: dark; --bg:#07111f; --panel:#0d1d31; --line:#233d5d; --cyan:#55e6d2; --blue:#79a8ff; --muted:#9fb2c9; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:radial-gradient(circle at 80% 20%,#153050 0,transparent 35%),var(--bg); color:#f6f9ff; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; }
+    main { width:min(1180px,92vw); margin:0 auto; padding:7vh 0 5vh; }
+    .top { display:flex; justify-content:space-between; align-items:center; color:var(--muted); font-size:18px; letter-spacing:.04em; }
+    .brand { color:var(--cyan); font-weight:800; }
+    h1 { max-width:980px; margin:10vh 0 3vh; font-size:clamp(48px,7vw,96px); line-height:1.03; letter-spacing:-.045em; }
+    h2 { margin:6vh 0 2vh; font-size:clamp(34px,5vw,70px); letter-spacing:-.035em; }
+    p { max-width:940px; color:var(--muted); font-size:clamp(22px,2.6vw,34px); line-height:1.55; }
+    .accent { color:var(--cyan); }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:5vh; }
+    .card { min-height:180px; padding:28px; border:1px solid var(--line); border-radius:20px; background:linear-gradient(145deg,rgba(19,42,69,.92),rgba(8,21,37,.92)); }
+    .card b { display:block; margin-bottom:12px; color:var(--blue); font-size:22px; }
+    .card span { color:#dce8f6; font-size:23px; line-height:1.45; }
+    .prompt { margin-top:5vh; padding:30px 34px; border-left:5px solid var(--cyan); background:var(--panel); border-radius:0 18px 18px 0; font-size:clamp(23px,2.5vw,34px); line-height:1.5; }
+    .en { margin-top:2.4vh; max-width:1060px; color:#d0dceb; font-size:clamp(17px,1.7vw,24px); line-height:1.45; }
+    .proof { display:flex; flex-wrap:wrap; gap:16px; margin-top:5vh; }
+    .pill { padding:14px 20px; border:1px solid var(--line); border-radius:999px; color:#dce8f6; font-size:21px; background:#0b1b2d; }
+    .footer { position:fixed; left:4vw; right:4vw; bottom:3vh; display:flex; justify-content:space-between; align-items:center; color:var(--muted); }
+    .dots { display:flex; gap:9px; }
+    .dot { width:10px; height:10px; border-radius:50%; background:#2a4462; }
+    .dot.active { width:30px; border-radius:8px; background:var(--cyan); }
+    section { display:none; min-height:74vh; }
+    section.active { display:block; animation:in .32s ease-out; }
+    @keyframes in { from { opacity:0; transform:translateY(10px) } to { opacity:1; transform:none } }
+    @media (max-width:800px) { .grid{grid-template-columns:1fr}.footer{position:static;margin-top:3vh} }
+  </style>
+</head>
+<body>
+<main>
+  <div class="top"><span class="brand">FrameGuard CN</span><span>OKX.AI Genesis · 80 秒演示</span></div>
+  <section class="active">
+    <h1>同一句“卡顿”，可能是<span class="accent">四条完全不同</span>的路径。</h1>
+    <p>平均帧低、1% low 波动、网络假卡顿、高帧率却不跟手。国服 ACE 与国际服 Vanguard 的安全条件也不能混用。</p>
+    <p class="en">The same “stutter” can mean low FPS, poor 1% lows, network rollback, or display/input latency. China ACE and global Vanguard paths are not interchangeable.</p>
+  </section>
+  <section>
+    <h2>玩家只需描述真实症状</h2>
+    <div class="prompt">国服，Windows 11，平均 260 FPS，但每隔几十秒卡一下。有人让我关内存完整性；我没有看到 ACE 虚拟化弹框。请帮我优化。</div>
+    <p class="en">China server, Windows 11, 260 FPS average, but periodic freezes. Someone suggested disabling Memory Integrity—without any ACE virtualization prompt.</p>
+  </section>
+  <section>
+    <h2>先分流，再改动</h2>
+    <div class="grid">
+      <div class="card"><b>安全边界</b><span>没有特定 ACE 弹框，不进入关闭 HVCI、VBS 或 Hyper-V 的路径。</span></div>
+      <div class="card"><b>定位实验</b><span>同时观察帧时间、1% low、RTT 与丢包，区分客户端和网络。</span></div>
+      <div class="card"><b>可回滚</b><span>每轮只改一类；同场景复测，无稳定收益就恢复原值。</span></div>
+    </div>
+    <p class="en">No generic tweak dump: separate frame-time issues from RTT or packet loss, preserve security boundaries, change one category at a time, and roll back non-repeatable gains.</p>
+  </section>
+  <section>
+    <h2>交付的是诊断方案，不是性能神话</h2>
+    <div class="proof">
+      <span class="pill">结论与置信度</span><span class="pill">已知 / 缺失</span><span class="pill">最多 5 项动作</span><span class="pill">依据等级</span><span class="pill">观察指标</span><span class="pill">回滚方法</span><span class="pill">复测协议</span><span class="pill">来源日期</span>
+    </div>
+    <p class="en">The deliverable is a measurable diagnosis plan—not a performance myth.</p>
+  </section>
+  <section>
+    <h2>公开、可安装、可复核</h2>
+    <div class="grid">
+      <div class="card"><b>GitHub Release</b><span>v1.0.0 与可移植 .skill 安装包</span></div>
+      <div class="card"><b>真实 Agent 回归</b><span>6 个隔离用例，覆盖国服、国际服、笔记本、网络与旧攻略</span></div>
+      <div class="card"><b>验证结果</b><span>212 / 212 契约检查通过；不冒充 Windows 真机增益</span></div>
+    </div>
+    <p class="en">Public v1.0.0 · six real Agent regressions · 212/212 checks passed · no fabricated Windows FPS claims.</p>
+  </section>
+  <section>
+    <h1><span class="accent">国服性能诊断</span><br>现在由 FrameGuard CN 交付。</h1>
+    <p>Agent-to-Agent · 黑客松期间免费 · Agent ID：<strong>等待链上创建回执</strong></p>
+    <p class="en">A free, measurable, reversible, and security-aware China-server performance diagnosis on OKX.AI.</p>
+  </section>
+</main>
+<div class="footer"><span>← / → 切换 · 空格自动播放</span><div class="dots"></div><span id="page">1 / 6</span></div>
+<script>
+  const slides=[...document.querySelectorAll('section')], dots=document.querySelector('.dots'); let current=0,timer=null;
+  slides.forEach((_,i)=>{const d=document.createElement('span');d.className='dot'+(i===0?' active':'');dots.append(d)});
+  function show(i){current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle('active',n===current));[...dots.children].forEach((d,n)=>d.classList.toggle('active',n===current));document.querySelector('#page').textContent=`${current+1} / ${slides.length}`}
+  function auto(){clearInterval(timer);show(0);timer=setInterval(()=>{if(current===slides.length-1){clearInterval(timer);return}show(current+1)},13000)}
+  show(Number(new URLSearchParams(location.search).get('slide')||0));
+  addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(current+1);if(e.key==='ArrowLeft')show(current-1);if(e.key===' '){e.preventDefault();auto()}});
+</script>
+</body>
+</html>

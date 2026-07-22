@@ -22,6 +22,11 @@ npx skills add 1924902988hu-del/valorant-cn-performance-skill --skill valorant-c
 - `docs/okx-a2a-listing-draft.md`：OKX.AI A2A 服务登记草案
 - `docs/demo-script-90s.md`：90 秒演示脚本
 - `docs/source-inventory.md`：一手资料清单与刷新日期
+- `docs/genesis-submission-checklist.md`：OKX.AI Genesis 规则、奖金、表单字段与当前提交状态
+- `docs/demo-storyboard.html`：可直接录屏的 80 秒中文演示分镜
+- `docs/demo-subtitles-en.srt`：演示视频英文字幕
+- `docs/x-participation-post-draft.md`：带证明边界的 X 参赛帖草稿
+- `docs/genesis-form-draft.md`：最终表单字段草稿与待确认项
 
 ## 本地验证
 
@@ -43,12 +48,20 @@ powershell -NoProfile -File .\skills\valorant-cn-performance\scripts\diagnose.ps
 - 本包是诊断与建议 Skill，不是远程控制器，也不承诺固定 FPS 提升。
 - 不修改、终止或绕过 ACE/Vanguard，不推荐“反作弊关闭器”、魔改系统或一键优化包。
 - 关闭 HVCI/VBS/Hyper-V 不是通用性能建议，只能在腾讯官方所述的特定虚拟化弹框路径里，解释安全与开发环境代价后由用户决定。
-- `docs/okx-a2a-listing-draft.md` 只是登记草案；尚未注册 ASP、上线 OKX.AI、发 X 或提交黑客松。
+- OKX.AI 身份与服务资料已经过上架格式检查，但尚未得到最终链上创建确认，因此还没有 Agent ID、未进入审核、未上线、未发 X、未提交黑客松。
 
 ## 已验证状态
 
 - Agent Skills 官方参考校验器：`Valid skill`
 - 6 个真实 Agent 回归：`212/212` 契约检查通过
 - PowerShell：完成静态只读检查；尚未在 Windows 真机执行，因此不声明真机兼容或性能收益
+
+## 公开发布
+
+- 仓库：<https://github.com/1924902988hu-del/valorant-cn-performance-skill>
+- v1.0.0：<https://github.com/1924902988hu-del/valorant-cn-performance-skill/releases/tag/v1.0.0>
+- 安装包：<https://github.com/1924902988hu-del/valorant-cn-performance-skill/releases/download/v1.0.0/valorant-cn-performance.skill>
+- 安装包 SHA-256：`d99a837e30aa3bff399da23b5a1c70e320206898d8d6380ef2433745271b6b3f`
+- 主分支发布提交：`935ce19eac9f7a74e680f6504edc0469b98ea31a`
 
 Evidence refreshed: 2026-07-22.
