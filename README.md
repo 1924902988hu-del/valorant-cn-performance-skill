@@ -24,6 +24,9 @@ npx skills add 1924902988hu-del/valorant-cn-performance-skill --skill valorant-c
 - `docs/source-inventory.md`：一手资料清单与刷新日期
 - `docs/genesis-submission-checklist.md`：OKX.AI Genesis 规则、奖金、表单字段与当前提交状态
 - `docs/demo-storyboard.html`：可直接录屏的 80 秒中文演示分镜
+- `docs/demo-subtitles-en.srt`：演示视频英文字幕
+- `docs/x-participation-post-draft.md`：带证明边界的 X 参赛帖草稿
+- `docs/genesis-form-draft.md`：最终表单字段草稿与待确认项
 
 ## 本地验证
 

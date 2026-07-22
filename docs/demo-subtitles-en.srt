@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:14,900
+The same “stutter” can mean low average FPS, poor 1% lows, network rollback, or display/input latency. China ACE and global Vanguard paths are not interchangeable.
+
+2
+00:00:15,000 --> 00:00:29,900
+Example: China server, Windows 11, 260 FPS average, but a freeze every few seconds. Someone suggested disabling Memory Integrity—without any ACE virtualization prompt.
+
+3
+00:00:30,000 --> 00:00:44,900
+FrameGuard CN does not dump generic tweaks. It first separates frame-time issues from RTT or packet loss, and it does not enter the HVCI/VBS/Hyper-V path without the specific ACE condition.
+
+4
+00:00:45,000 --> 00:00:59,900
+Change one category at a time, repeat the same scenario, measure the result, and roll back when the gain is not repeatable.
+
+5
+00:01:00,000 --> 00:01:14,900
+Public v1.0.0 release. Six real Agent regressions. 212 of 212 contract checks passed—without pretending that model tests prove Windows FPS gains.
+
+6
+00:01:15,000 --> 00:01:25,300
+FrameGuard CN offers a free agent-to-agent China-server performance diagnosis on OKX.AI: measurable, reversible, and security-aware.
